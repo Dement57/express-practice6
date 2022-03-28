@@ -1,0 +1,26 @@
+{
+  "name": "express-practice6",
+  "version": "1.0.0",
+  "description": "Express education project ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dement57/express-practice6.git"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "VK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dement57/express-practice6/issues"
+  },
+  "homepage": "https://github.com/Dement57/express-practice6#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
