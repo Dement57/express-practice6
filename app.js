@@ -1,5 +1,5 @@
-export function appSrc(x, bodyParser, createReadStream, crypto, http) {
-    const app = x();
+export default function appSrc(express, bodyParser, createReadStream, crypto, http) {
+    const app = express();
     const headers = {
         'Content-Type': 'text/html; charset=utf-8',
         'Access-Control-Allow-Origin': '',
@@ -29,14 +29,13 @@ export function appSrc(x, bodyParser, createReadStream, crypto, http) {
                     try {
                         res.send(rawData);
                     } catch (e) {
-                        console.error(e.message);
                     }
                 });
             });
         })
         .use(bodyParser.json())
         .post('/req/', (req, res) => {
-            const url = req.body.url;
+            const url = req.body.addr;
             http.get(url, resp => {
                 resp.setEncoding('utf8');
                 let rawData = '';
