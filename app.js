@@ -1,7 +1,6 @@
 export default function appSrc(express, bodyParser, createReadStream, crypto, http) {
     const app = express();
     const headers = {
-        "Accept": "*/*",
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET,POST,PUT,PATCH,OPTIONS,DELETE"
     };
