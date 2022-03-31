@@ -1,4 +1,4 @@
-function appSrc(express, bodyParser, createReadStream, crypto, http) {
+export default function appSrc(express, bodyParser, createReadStream, crypto, http) {
     const app = express();
     const headers = {
         "Access-Control-Allow-Origin": "*",
@@ -52,5 +52,4 @@ function appSrc(express, bodyParser, createReadStream, crypto, http) {
             res.send('dement057777')
         });
     return app;
-}
-export { appSrc };
+};
